@@ -10,7 +10,7 @@
 #include "../src/dragon/dragon_cipher.h"
 
 int test_sbox_and_G(const char *filepath) {
-    printf("=== TEST S-BOX, G_box & H_box (TU FILE: %s) ===\n", filepath);
+    printf("TEST G_box & H_box (TU FILE: %s)\n", filepath);
 
     // 1. Kiểm tra nhanh phần tử đầu và cuối của 2 bảng tra cứu tĩnh
     if (sbox1[0] != 0x393BCE6B || sbox1[255] != 0x0192B555 ||
@@ -74,6 +74,6 @@ int test_sbox_and_G(const char *filepath) {
 
     fclose(fp);
 
-    printf("=> Ket qua S-box/G/H: %d/%d test dat.\n\n", passed_count, total);
+    printf("Ket qua test: %d/%d test dat.\n\n", passed_count, total);
     return (total > 0 && passed_count == total) ? 1 : 0;
 }
