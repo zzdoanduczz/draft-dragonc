@@ -9,8 +9,8 @@
 #include "../src/dragon/dragon_init.h"
 #include "../src/dragon/dragon_cipher.h"
 
-int test_sbox_and_G(const char *filepath) {
-    printf("TEST G_box & H_box (Tu file: %s)\n", filepath);
+int test_Hbox_and_Gbox(const char *filepath) {
+    printf("TEST G_box & H_box (file: %s)\n", filepath);
 
     // Mở file chứa các test case
     FILE *fp = fopen(filepath, "r");

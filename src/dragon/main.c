@@ -15,6 +15,6 @@ Xây dựng hàm main hỗ trợ các tham số dòng lệnh để cả người
 */
 
 int main(int argc, char *argv[]) {
-    test_sbox_and_G("tests/test_g_h_func.txt");
+    test_Hbox_and_Gbox("tests/test_g_h_func.txt");
     system("pause");
 }
