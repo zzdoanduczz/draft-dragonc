@@ -1,5 +1,4 @@
-# Định dạng: FUNC(G hoặc H)  N(1..3)  INPUT_X(hex)  EXPECTED_OUTPUT(hex)
-# Lưu ý: Bạn có thể thêm/sửa/xóa bất kỳ dòng test nào dưới đây.
+# FUNC(G hoặc H)  N(1..3)  INPUT_X(hex)  EXPECTED_OUTPUT(hex)
 
 # 1. Kiểm thử giá trị biên toàn bit 0 (0x00000000)
 G 1 00000000 90700DEF
