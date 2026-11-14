@@ -4,7 +4,8 @@
 #include "dragon_init.h"
 #include "dragon_f.h"
 #include "dragon_cipher.h"
-
+#include "../../tests/test_dragon.h"
+#include <stdlib.h>
 /* 
 Xây dựng hàm main hỗ trợ các tham số dòng lệnh để cả người dùng lẫn Giao diện Python có thể gọi dễ dàng:
 1. ./dragon_cli --encrypt-text <key_hex> <iv_hex> "<plaintext>"
@@ -14,7 +15,6 @@ Xây dựng hàm main hỗ trợ các tham số dòng lệnh để cả người
 */
 
 int main(int argc, char *argv[]) {
-    //Cài đặt menu dòng lệnh hoặc xử lý tham số argv[]
-
-    return 0;
+    test_sbox_and_G("tests/test_g_h_func.txt");
+    system("pause");
 }

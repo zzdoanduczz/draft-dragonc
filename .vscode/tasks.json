@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build project",
+            "command": "C:/msys64/ucrt64/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-I${workspaceFolder}/src/dragon",
+                "-I${workspaceFolder}/tests",
+                "${workspaceFolder}/src/dragon/main.c",
+                "${workspaceFolder}/src/dragon/dragon.c",
+                "${workspaceFolder}/src/dragon/dragon_cipher.c",
+                "${workspaceFolder}/src/dragon/dragon_f.c",
+                "${workspaceFolder}/src/dragon/dragon_init.c",
+                "${workspaceFolder}/src/dragon/dragon_sbox.c",
+                "${workspaceFolder}/tests/test_dragon.c",
+                "-o",
+                "${workspaceFolder}/main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build toàn bộ dự án Dragon"
+        }
+    ]
+}
