@@ -40,7 +40,7 @@ int test_Hbox_and_Gbox(const char *filepath) {
         int n;
         uint32_t input, expected;
 
-        // Đọc 4 trường: FUNC N INPUT EXPECTED
+        // Đọc 4 trường func n input expected
         if (sscanf(p, " %c %d %x %x", &type, &n, &input, &expected) != 4) {
             printf("Dong %d sai dinh dang, bo qua: %s", line_num, line);
             continue;
